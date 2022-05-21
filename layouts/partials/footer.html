@@ -1,12 +1,10 @@
-<footer id="footer">
-  <nav>
-    <ul>
-      {{ range .Site.Menus.footer }}
-        <li>
-          <a href="{{ absLangURL .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-        </li>
-      {{ end }}
-    </ul>
-  </nav>
-  <p>&copy; {{ partial "license" . }}.</p>
-</footer>
+<nav>
+  <ul>
+    {{ range .Site.Menus.footer }}
+      <li>
+        <a href="{{ absLangURL .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
+<p>&copy; {{ partial "license" . }}.</p>

@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-
     {{ with .Description }}
       <meta name="description" content="{{ . }}" />
     {{ end }}
@@ -58,7 +57,7 @@
   <body class="page-kube">
     <header>{{ block "header" . }}{{ end }}</header>
     <main>{{ block "main" . }}{{ end }}</main>
-    <footer>{{ block "footer" . }}{{ end }}</footer>
+    <footer id="footer">{{ block "footer" . }}{{ end }}</footer>
 
     <script src="{{ "/js/kube.js" | relURL }}" type="text/javascript"></script>
     <script src="{{ "/js/kube.legenda.js" | relURL }}" type="text/javascript"></script>
