@@ -1,0 +1,5 @@
+globs: ['**/*.md']
+ignores:
+  - _vendor/
+  - node_modules/
+  - public/

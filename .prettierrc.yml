@@ -1,0 +1,8 @@
+overrides:
+  - files: ['*.html']
+    options: { parser: 'go-template' }
+  - files: '*.{Rmd,Rmarkdown}'
+    options: { parser: markdown }
+proseWrap: preserve
+semi: false
+singleQuote: true
